@@ -6,9 +6,9 @@ I don't know if this is already a thing but I'm gonna go ahead and make it anywa
 Right now, there's nothing much on it so you'll just have to wait.
 
 # Todo
-  - [ ] Add options bar
+  - [X] Add options bar
   
-  - [ ] Add eraser tool to options bar
+  - [X] Add eraser tool to options bar
   
   - [ ] Add different squares to options bar
   
@@ -16,3 +16,5 @@ Right now, there's nothing much on it so you'll just have to wait.
   
   - [ ] Add an output bar to see what created array map looks like in code
 
+# Known bugs
+  - When you change your colour, all other squares change colour too
