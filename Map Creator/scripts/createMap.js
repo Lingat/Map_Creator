@@ -19,7 +19,7 @@ function createMap(mWidth, mHeight) {
 
 
 //	this should be changed to createMap(inputX, inputY)
-var map = createMap(40, 40),
+var map = createMap(13, 13),
 	mapWidth = map[1].length,
 	mapHeight = map.length;
 
@@ -27,10 +27,12 @@ var map = createMap(40, 40),
 var gridSquares = [];
 
 
-	for(i = 0; i < mapWidth; i++) {
+// basically just pushes everything into gridSquares
+// used for being able to click on the squares
+for(i = 0; i < mapWidth; i++) {
 
 			//	looping through the array to draw each individual rectangle
-			for(j = 0; j < mapHeight; j++){
+	for(j = 0; j < mapHeight; j++){
 					gridSquares.push({
 					x: (i * (canvas.width / mapWidth)),
 					y: (j * (canvas.height / mapHeight)),
