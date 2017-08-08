@@ -1,3 +1,5 @@
+// main stuff
+
 function draw() {
 	pathWay.draw();
 }
@@ -11,8 +13,5 @@ function tick() {
 	update();
 	draw();
 }
-
-
-
 
 setInterval(tick, frameRate);

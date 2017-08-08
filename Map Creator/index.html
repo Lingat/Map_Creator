@@ -2,6 +2,8 @@
 <head>
 <title>Map Creator</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!-- FYI, everything here was made by me except this css,
+	 unfortunately it's a shameful copy and paste -->
 <style> 
 input[type="color"] {
 	-webkit-appearance: none;
@@ -15,15 +17,41 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
+
 </style>
 </head>
+
 <body>
 <canvas id = "canvas" width = "600" height = "400" style = "border: 1px solid black"></canvas>
 <div id = "options-bar">
+
 <input type="color" value="#ff0000" id="color-picker">
+
 <div id = "draw-tool" onclick="toggleDraw()">Draw Tool</div>
+
 <div id = "erase-tool" onclick="toggleEraser()">Eraser</div>
+
+<!-- <button id ="commit" onclick="changeMapValues()">Commit Changes</button>
 </div>
+<p>Amount of square columns:<input type="text" id="col-amount" value="13"></p>
+<p>Amount of squares within column:<input type="text" id="sq-amount" value="13"></p> 
+
+#commit {
+	float: right;
+	margin-top:-50px;
+	border: none;
+	text-decoration-style: none;
+	background: none;
+	cursor: pointer;
+}
+#commit:focus{
+	outline:none;
+}
+#options-bar {
+	width: 500px;
+}
+-->
+
 <script src="scripts/constants.js"></script>
 <script src="scripts/createMap.js"></script>
 <script src="scripts/optionsBar.js"></script>

@@ -35,10 +35,12 @@ function squareDown(e) {
 }
 
 /*
-	move this somewhere else
-	this function is only a test 
-	essentially what it needs to do is be able to click a square
-	and replace that with a number
+	easy explanation:
+	if mouse is clicked, place square down and toggleMouse
+	onmove, place more square if toggleMouse is true
+	if mouseup then toggleMouse is false
+	of course whatever square is put down is dependent on what tool is 
+	toggled
 */
 canvas.onmousedown= function rectClick(e) {
 	toggleMouse = true;

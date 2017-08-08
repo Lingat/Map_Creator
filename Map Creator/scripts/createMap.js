@@ -18,10 +18,22 @@ function createMap(mWidth, mHeight) {
 	}
 
 
+//	input values for how many squares and canvas sizing
+/* var colAmount = document.getElementById("col-amount"),
+	colValue = parseInt(colAmount.value),
+	sqAmount = document.getElementById("sq-amount"),
+	sqValue = parseInt(sqAmount.value); */
+
+var colValue = parseInt(prompt("Amount of Rows"));
+var sqAmount = parseInt(prompt("Amount of squares in rows"));
+
+
+
 //	this should be changed to createMap(inputX, inputY)
-var map = createMap(13, 13),
+var map = createMap(colValue, sqAmount),
 	mapWidth = map[1].length,
 	mapHeight = map.length;
+
 
 //	to push objects into that can later be used
 var gridSquares = [];
