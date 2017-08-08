@@ -6,8 +6,12 @@
 </head>
 <body>
 <canvas id = "canvas" width = "600" height = "400" style = "border: 1px solid black"></canvas>
-
+<div id = "options-bar">
+<div id = "draw-tool" onclick="toggleDraw()">Draw Tool</div>
+<div id = "erase-tool" onclick="toggleEraser()">Eraser</div>
+</div>
 <script src="scripts/constants.js"></script>
 <script src="scripts/createMap.js"></script>
+<script src="scripts/optionsBar.js"></script>
 <script src="scripts/main.js"></script>
 </body>
