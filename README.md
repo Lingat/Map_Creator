@@ -6,8 +6,13 @@ I don't know if this is already a thing but I'm gonna go ahead and make it anywa
 Right now, there's nothing much on it so you'll just have to wait.
 
 # Todo
-  -[]  Add options bar
-  -[]  Add eraser tool to options bar
-  -[]  Add different squares to options bar
-  -[]  Add input values to change amount of squares and canvas sizing
-  -[]  Add an output bar to see what created array map looks like in code
+  - [ ] Add options bar
+  
+  - [ ] Add eraser tool to options bar
+  
+  - [ ] Add different squares to options bar
+  
+  - [ ] Add input values to change amount of squares and canvas sizing
+  
+  - [ ] Add an output bar to see what created array map looks like in code
+
