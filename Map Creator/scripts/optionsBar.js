@@ -1,5 +1,6 @@
 // Options Bar Functions
-var gridInt = 1;
+var gridInt = 1,
+	toggleMouse = false;
 
 function toggleEraser() {
 	gridInt = 0;
@@ -9,18 +10,11 @@ function toggleDraw() {
 	gridInt = 1;
 }
 
-/*
-	move this somewhere else
-	this function is only a test 
-	essentially what it needs to do is be able to click a square
-	and replace that with a number
-*/
-canvas.onclick = function rectClick(e) {
-
-	//	for the canvas boundaries so we get the right coordinates
-	var rect = canvas.getBoundingClientRect(),
+function squareDown(e) {
+		var rect = canvas.getBoundingClientRect(),
 		x = e.clientX - rect.left,
-		y = e.clientY - rect.top;
+		y = e.clientY - rect.top,
+		toggleMouse = true;
 
 
 		// iterating through the pathWay that holds the objects, if click is within boundaries do something
@@ -37,8 +31,27 @@ canvas.onclick = function rectClick(e) {
 					map[placeY][placeX] = gridInt;
 			
 				}
-		}
-		
-						
-				}
+		}		
+}
+
+/*
+	move this somewhere else
+	this function is only a test 
+	essentially what it needs to do is be able to click a square
+	and replace that with a number
+*/
+canvas.onmousedown= function rectClick(e) {
+	toggleMouse = true;
+	squareDown(e);
+	}
+
+canvas.onmouseup = function untoggle() {
+	toggleMouse = false;
+}
+
+canvas.onmousemove = function rectMove(e) {
+	if(toggleMouse){
+	squareDown(e);
+	}	
+}
 			

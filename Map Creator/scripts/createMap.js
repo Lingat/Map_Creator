@@ -51,6 +51,7 @@ var pathWay = {
 	height: (canvas.height / mapHeight),
 	x: 0,
 	y: 0,
+	color: squareColor,
 	draw: function() {
 
 		//	drawing the grid
@@ -64,11 +65,13 @@ var pathWay = {
 				ctx.strokeRect(((i * this.width)), ((j * this.height)), this.width, this.height);
 
 				//	so we can click on them, be used for later with a gridSquares[i]
-			
-				//	any other number can be edited here to be replaced by any other numbers
+			//	any other number can be edited here to be replaced by any other numbers
+				
 				if(map[j][i] == 1 || map[j][i] == 3) {
 					ctx.beginPath();
-					ctx.fillStyle = "red";
+
+					ctx.fillStyle = squareColor;
+					
 					ctx.fillRect(((i * this.width)), ((j * this.height)), this.width, this.height);
 					ctx.closePath();
 					}

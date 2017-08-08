@@ -4,4 +4,12 @@ var canvas = document.getElementById('canvas'),
 canvas.width = 500;
 canvas.height= 500;
 
+//	to pick what color square you want
+var colorPicker = document.getElementById("color-picker");
+	squareColor = colorPicker.value;
+	document.onclick = function() {
+	squareColor = colorPicker.value;
+
+	}
+
 var frameRate = 1000/30;
