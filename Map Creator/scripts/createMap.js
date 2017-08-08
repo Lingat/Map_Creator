@@ -19,7 +19,7 @@ function createMap(mWidth, mHeight) {
 
 
 //	this should be changed to createMap(inputX, inputY)
-var map = createMap(24, 24),
+var map = createMap(40, 40),
 	mapWidth = map[1].length,
 	mapHeight = map.length;
 
