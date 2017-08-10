@@ -1,7 +1,7 @@
 // Options Bar Functions
 var gridInt = 1,
 	toggleMouse = false;
-
+	
 function toggleEraser() {
 	gridInt = 0;
 }

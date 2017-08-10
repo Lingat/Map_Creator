@@ -35,6 +35,13 @@ var map = createMap(colValue, sqAmount),
 	mapHeight = map.length;
 
 
+function getMap(array) {
+	
+	return array;
+}
+
+
+
 //	to push objects into that can later be used
 var gridSquares = [];
 
@@ -73,7 +80,7 @@ var pathWay = {
 			for(j = 0; j < mapHeight; j++){
 
 				//	if any 0's, draw open square
-				ctx.fillStyle = "black";
+				ctx.fill3Style = "black";
 				ctx.strokeRect(((i * this.width)), ((j * this.height)), this.width, this.height);
 
 				//	so we can click on them, be used for later with a gridSquares[i]

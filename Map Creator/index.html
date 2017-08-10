@@ -17,6 +17,11 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
+#outputBar {
+	top: 0px;
+	position: absolute;
+	left: 520px;
+}
 
 </style>
 </head>
@@ -52,8 +57,14 @@ input[type="color"]::-webkit-color-swatch {
 }
 -->
 
+<div id = "outputBar">
+<p>Output:<span id = "outputCode"></span></p>
+
+</div>
+
 <script src="scripts/constants.js"></script>
 <script src="scripts/createMap.js"></script>
 <script src="scripts/optionsBar.js"></script>
+<script src="scripts/output.js"></script>
 <script src="scripts/main.js"></script>
 </body>
